@@ -1,0 +1,11 @@
+require: rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false

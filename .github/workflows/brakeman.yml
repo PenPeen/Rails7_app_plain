@@ -1,0 +1,17 @@
+name: Brakeman
+
+on: [pull_request]
+
+jobs:
+  brakeman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+      - name: Install dependencies
+        run: bundle install
+      - name: Run Brakeman
+        run: bundle exec brakeman
