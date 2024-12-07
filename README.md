@@ -1,24 +1,16 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Clone Repository
 
-Things you may want to cover:
+`git clone git@github.com:PenPeen/Rails7_app_plain.git`
 
-* Ruby version
+## Start App
 
-* System dependencies
+`docker-compose up -d`
 
-* Configuration
+## Create DB
 
-* Database creation
+`docker-compose exec web /bin/bash`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+コンテナ内で以下実行
+`rails db:setup`
